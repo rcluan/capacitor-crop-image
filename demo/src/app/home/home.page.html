@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Image Crop
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-img [src]="picture"></ion-img>
+
+  <ion-button (click)="camera()" expand="full">
+    Open camera
+  </ion-button>
+
+  <ion-button (click)="gallery()" expand="full">
+    Open gallery
+  </ion-button>
+
+</ion-content>
